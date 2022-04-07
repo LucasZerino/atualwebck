@@ -64,6 +64,7 @@ class Navbar extends React.Component {
                 color: #fff;
                 padding: 10px;
                 font-size: 100%;
+                text-transform: uppercase;
             }
             a:hover{
                 color: #04E5E5;
@@ -156,7 +157,7 @@ class Navbar extends React.Component {
                     <Nav className={`navbar navbar-expand-sm ${this.state.collapse === true ? 'expand' : 'hidden_mobile'}`}>
                         <NavInner className={`navbar-collapse collapse ${this.state.collapse === true ? 'show' : ''}`}>
                             <div className="navbar-nav">{this.navItems()}</div>
-                            <a href='/rastreio'>Rastreador</a>
+                           <a href='/rastreio'>Rastreador</a>  
                         </NavInner>
                     </Nav>
                 </NavbarContainer>
@@ -182,7 +183,7 @@ class Navbar extends React.Component {
             background: none;
             border: none;
             color: #fff;
-            text-transform: capitalize;
+            text-transform: uppercase;
             font-weight: 500;
             margin: 10px 5px;
             transition: .5s;
