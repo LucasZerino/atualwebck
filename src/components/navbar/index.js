@@ -144,8 +144,8 @@ class Navbar extends React.Component {
         return(
             <NavbarWrapper className={`header${this.state.sticky === true ? ' sticky' : ''}`}>
                 <NavbarContainer>
-                    <LogoWrapper href='https://webck.com.br/' className="logo">
-                       <a href='https://webck.com.br/'><Logo src="/img/logo.png" alt="logo" /></a>
+                    <LogoWrapper className="logo">
+                       <a href='/'><Logo src="/img/logo.png" alt="logo" /></a>
                     </LogoWrapper>
                     <Toggler
                         onClick={() => this.collapseNav()}
@@ -156,7 +156,7 @@ class Navbar extends React.Component {
                     <Nav className={`navbar navbar-expand-sm ${this.state.collapse === true ? 'expand' : 'hidden_mobile'}`}>
                         <NavInner className={`navbar-collapse collapse ${this.state.collapse === true ? 'show' : ''}`}>
                             <div className="navbar-nav">{this.navItems()}</div>
-                            <a href='https://webck.com.br/personal/'>Rastreador</a>
+                            <a href='/rastreio'>Rastreador</a>
                         </NavInner>
                     </Nav>
                 </NavbarContainer>
